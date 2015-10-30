@@ -10,3 +10,227 @@ body {
   width: 100%;
   min-width: 1200px;
 }
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.inline-block {
+  display: inline-block;
+}
+ul.inline-block {
+  display: inline-block;
+}
+.inline {
+  display: inline;
+}
+div[class*="column"] {
+  float: left;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:after,
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.column1 {
+  width: 8.33%;
+}
+.column2 {
+  width: 16.66%;
+}
+.column3 {
+  width: 25%;
+}
+.column4 {
+  width: 33.33%;
+}
+.column5 {
+  width: 41.66%;
+}
+.column6 {
+  width: 50%;
+}
+.column7 {
+  width: 58.33%;
+}
+.column8 {
+  width: 66.66%;
+}
+.column9 {
+  width: 75%;
+}
+.column10 {
+  width: 83.11%;
+}
+.column11 {
+  width: 91.66%;
+}
+.column12 {
+  width: 100%;
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('../fonts/fontello.eot?48307089');
+  src: url('../fonts/fontello.eot?48307089#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?48307089') format('woff'), url('../fonts/fontello.ttf?48307089') format('truetype'), url('../fonts/fontello.svg?48307089#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?48307089#fontello') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.icon-right-open:before {
+  content: '\e800';
+}
+/* '' */
+.icon-left-open:before {
+  content: '\e801';
+}
+/* '' */
+.icon-facebook-1:before {
+  content: '\e802';
+}
+/* '' */
+.icon-export-alt:before {
+  content: '\e803';
+}
+/* '' */
+.icon-vk:before {
+  content: '\e804';
+}
+/* '' */
+.page-header {
+  background-image: url(../img/pink.jpg);
+  width: 100%;
+  min-height: 110px;
+  position: relative;
+}
+.page-header ul > li {
+  display: inline-block;
+}
+.page-header .column5 {
+  margin-top: 25px;
+}
+.page-header:after {
+  content: '';
+  display: block;
+  background-image: url(../img/px2.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 100px;
+  height: 24px;
+  width: 100%;
+}
+.nav-item {
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffc2d5;
+  text-transform: uppercase;
+  transition: all 1s;
+  padding: 15px;
+  position: relative;
+}
+.nav-item:hover {
+  color: #fff;
+}
+.nav-item:hover:before {
+  content: '';
+  background-image: url(../img/nav.png);
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 69px;
+  height: 79px;
+  position: absolute;
+  bottom: -15px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+.logo {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+}
+.slideshow {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+.slideshow:before {
+  content: '';
+  display: block;
+  background-image: url(../img/showcase_after.png);
+  width: 100%;
+  height: 41px;
+  background-repeat: repeat-x;
+  position: absolute;
+  transform: scale(1, -1);
+  top: -19px;
+  z-index: 1;
+}
+.slideshow:after {
+  content: '';
+  display: block;
+  background-image: url(../img/showcase_after.png);
+  width: 100%;
+  height: 41px;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: -19px;
+}

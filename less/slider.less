@@ -1,0 +1,30 @@
+.slideshow{
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.slideshow:before{
+  content: '';
+  display: block;
+  background-image: url(../img/showcase_after.png);
+  width: 100%;
+  height: 41px;
+  background-repeat: repeat-x;
+  position: absolute;
+  transform: scale(1, -1);
+  top: -19px;
+  z-index: 1;
+}
+
+.slideshow:after{
+  content: '';
+  display: block;
+  background-image: url(../img/showcase_after.png);
+  width: 100%;
+  height: 41px;
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: -19px;
+}
