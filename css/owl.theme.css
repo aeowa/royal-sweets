@@ -1,4 +1,4 @@
-/*
+v/*
 * 	Owl Carousel Owl Demo Theme 
 *	v1.3.3
 */
@@ -16,14 +16,20 @@
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */
 	margin: 5px;
-	padding: 3px 10px;
-	font-size: 12px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-	background: #869791;
+	/*padding: 3px 10px;*/
+	font-size: 14px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background: #fff;
 	filter: Alpha(Opacity=50);/*IE7 fix*/
 	opacity: 0.5;
+	  width: 80px;
+  height: 80px;
+}
+
+.owl-carousel{
+	position: relative;
 }
 /* Clickable class fix problem with hover on touch devices */
 /* Use it for non-touch hover action */

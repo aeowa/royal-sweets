@@ -1,0 +1,66 @@
+.quotation{
+  color: @light-grey;
+  font-size: normal;
+  margin: 40px 0 0 0;
+  position: relative;
+
+  & cite{
+    color: @pink; 
+    display: block; 
+    font-style: normal;
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
+    font-size: @normal + 5px;
+    // margin-bottom: 20px;
+  }
+
+}
+
+.quotation:after{
+  content: '';
+  display: block;
+  background-image: url(../img/px2.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 150px;
+  height: 24px;
+  width: 100%;
+}
+
+
+.quote-text{
+  position: relative;
+  margin: 0 90px;
+  transition: all 1s;
+}
+
+.quote-text:before{
+content: '';
+float: left;
+background-image: url(../img/spritesheet.png);
+background-position: -99px -5px;
+width: 52px;
+height: 39px;
+background-repeat: no-repeat;
+position: absolute;
+left: -60px;
+transition: all 0.5s;
+}
+
+.quote-text:after{
+content: '';
+float: right;
+background-image: url(../img/spritesheet.png);
+background-position: -37px -4px;
+width: 53px;
+height: 39px;
+background-repeat: no-repeat;
+position: absolute;
+right: -60px;
+top: 0;
+transition: all 0.5s;
+}
+
+.quote-text:hover:before, .quote-text:hover:after{
+  opacity: 0.8;
+}

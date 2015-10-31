@@ -5,9 +5,11 @@
   <meta name="description" content="Кондитерские изделия на заказ">
   <title>Royal Sweets</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/owl.transitions.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,9 +22,9 @@
         <div class="column5 text-center">
           <nav class="main-nav pull-left">
             <ul>
-              <li><a href="#" class="nav-item">О компании</a></li>
-              <li><a href="#" class="nav-item">Меню</a></li>
-              <li><a href="#" class="nav-item">Спецпредложения</a></li>
+              <li><a href="#" class="nav-item scrollto">О компании</a></li>
+              <li><a href="#" class="nav-item scrollto">Меню</a></li>
+              <li><a href="#sp-offers" class="nav-item scrollto">Спецпредложения</a></li>
             </ul>
           </nav>
         </div>
@@ -36,9 +38,9 @@
         <div class="column5 text-center">
           <nav class="main-nav">
             <ul>
-              <li><a href="#" class="nav-item">Галерея</a></li>
-              <li><a href="#" class="nav-item">Контакты</a></li>
-              <li><a href="#" class="nav-item">Сделать заказ</a></li>
+              <li><a href="#" class="nav-item scrollto">Галерея</a></li>
+              <li><a href="#" class="nav-item scrollto">Контакты</a></li>
+              <li><a href="#" class="nav-item scrollto">Сделать заказ</a></li>
             </ul>
           </nav>
         </div>
@@ -46,44 +48,134 @@
     </div>
   </header>
 
-<!-- MAIN -->
+<!-- SLIDESHOW -->
 
   <main>
 
-        <div class="slideshow">
-          <div class="gallery-container">
-              <div id="owl-example" class="owl-carousel">
-                <div>
-                  <img src="img/bg-top1.jpg" alt="" width="100%" height="400px">
-                </div>
-                <div>
-                  <img src="img/bg-top2.jpg" alt="" width="100%" height="400px">
-                </div>
-                <div>
-                  <img src="img/bg-top3.jpg" alt="" width="100%" height="400px">
-                </div>
-                <div>
-                  <img src="img/bg-top4.jpg" alt="" width="100%" height="400px">
-                </div>
-             </div>
+    <section class="slideshow">
+      <h1 class="slider-heading">Кондитерские изделия на любой вкус</h1>
+      <div class="gallery-container">
+          <div id="owl-example" class="owl-carousel">
+            <div>
+              <img src="img/bg-top1.jpg" alt="" width="100%" height="400px" class='owl-fade-in'>
+            </div>
+            <div>
+              <img src="img/bg-top2.jpg" alt="" width="100%" height="400px">
+            </div>
+            <div>
+              <img src="img/bg-top3.jpg" alt="" width="100%" height="400px">
+            </div>
+            <div>
+              <img src="img/bg-top4.jpg" alt="" width="100%" height="400px">
+            </div>
+         </div>
+      </div>
+      <a href="" class="button-see-menu">Посмотреть меню</a>
+    </section>
+
+    <!-- QUOTE -->
+
+    <section class="quotation">
+      <div class="container">
+        <div class="row">
+          <div class="column12 text-center">
+            <blockquote class="quote-text">Конфета бывает простой и с помадкай, немного с кислинкой и приторно-сладкой, в обёртке блестящей и мало приглядной, клубничной, малиновой и шоколадной. И мягкой, и твердой, и даже тягучей, бывает орешков в ней целая куча. И каждый кто пробовал, сам понимает: ненужной она никогда не бывает!<cite>Д. Половнев</cite></blockquote>
           </div>
         </div>
-  
-</div>
+      </div>
+    </section>
+
+<!-- COMPANY -->
+
+
+
+<!-- SPECIAL OFFERS -->
+
+    <section class="special-offers" id='sp-offers'>
+      <h2 class="section-heading">Специальные предложения</h2>
+      <div class="container">
+        <div class="row">
+          <div class="column3">
+            <div class="special-offer-item">
+              <a href=""><img src="img/page1-img2.jpg" alt="" class="special-offer-img"></a>
+              <a href=""><h4 class="offer-heading">Lorem ipsum.</h4></a>
+              <p class='offer-description'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, placeat!</p>
+              <a href="" class="button-readmore">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="column3">
+            <div class="special-offer-item">
+              <a href=""><img src="img/page1-img3.jpg" alt="" class="special-offer-img"></a>
+              <a href=""><h4 class="offer-heading">Sapiente, quo.</h4></a>
+              <p class='offer-description'>Aperiam, quaerat doloremque voluptatem magni  soluta, nesciunt officia.</p>
+              <a href="" class="button-readmore">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="column3">
+            <div class="special-offer-item">
+              <a href=""><img src="img/page1-img4.jpg" alt="" class="special-offer-img"></a>
+              <a href=""><h4 class="offer-heading">Totam, iure!</h4></a>
+              <p class='offer-description'>Ullam aliquam praesentium asp culpa dolorum, officiis est harum.</p>
+              <a href="" class="button-readmore">Подробнее</a>
+            </div>
+          </div>
+
+          <div class="column3">
+            <div class="special-offer-item">
+              <a href=""><img src="img/page1-img5.jpg" alt="" class="special-offer-img"></a>
+              <a href=""><h4 class="offer-heading">Provident, dolores?</h4></a>
+              <p class='offer-description'>Ratione, eveniet? Harum rerum minus aliquid enim, voluptas. Recusandae, aspernatur.</p>
+              <a href="" class="button-readmore">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
 <!-- FOOTER -->
 
-  <footer>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="column5 text-center">
+          <nav class="main-nav pull-left">
+            <ul>
+              <li><a href="#" class="nav-item scrollto">О компании</a></li>
+              <li><a href="#" class="nav-item scrollto">Меню</a></li>
+              <li><a href="#sp-offers" class="nav-item scrollto">Спецпредложения</a></li>
+            </ul>
+          </nav>
+        </div>
 
+        <div class="column2">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" height="155" width="167" alt="">
+          </a>
+        </div>
+
+        <div class="column5 text-center">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#" class="nav-item scrollto">Галерея</a></li>
+              <li><a href="#" class="nav-item scrollto">Контакты</a></li>
+              <li><a href="#" class="nav-item scrollto">Сделать заказ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script src="js/live.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/anchor.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+
 <script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script type='text/javascript'> $(function() { $.fn.scrollToTop = function() { $(this).hide().removeAttr("href"); if ($(window).scrollTop() != "0") { $(this).fadeIn("slow") } var scrollDiv = $(this); $(window).scroll(function() { if ($(window).scrollTop() == "0") { $(scrollDiv).fadeOut("slow") } else { $(scrollDiv).fadeIn("slow") } }); $(this).click(function() { $("html, body").animate({ scrollTop: 0 }, "slow") }) } }); $(function() { $("#toTop").scrollToTop(); }); </script> <a href='#' id='toTop' style='display:none;'></a>
 
 </body>

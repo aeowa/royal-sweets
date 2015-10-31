@@ -1,0 +1,99 @@
+.special-offers{
+background-image: url(../img/px3.jpg);
+
+}
+
+.section-heading{
+margin: 30px auto;
+padding-top: 60px;
+font-size: @big;
+text-transform: uppercase;
+color: @dark-grey;
+position: relative;
+text-align: center;
+font-weight: normal;
+}
+
+.special-offer-item{
+  background-color: #fff;
+  padding: 18px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: all 1s;
+  position: relative;
+  border: 1px solid  #ddd;
+  margin-bottom: 70px;
+
+    & a{
+      text-decoration: none;
+      cursor: hand;
+    }
+}
+
+.special-offer-item:hover{
+background-color: @bordo;
+  & .offer-heading{
+    color: @pink;
+  }
+
+  & .offer-description{
+    color: #fff;
+  }
+
+  & .button-readmore{
+    color: @bordo;
+  }
+
+}
+
+.special-offer-item:hover:before{
+content: '';
+display: block;
+position: absolute;
+background-color: transparent;
+width: 93%;
+height: 95%;
+border: 1px solid #fff;
+border-radius: 10px;
+left: 9px;
+top: 10px;
+opacity: 0.7;
+z-index: -1;
+}
+
+.special-offer-img{
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.offer-heading{
+margin: 20px 0;
+transition: 0.5s all;
+text-align: center;
+}
+
+.offer-description{
+  color: @light-grey;
+}
+
+.button-readmore{
+  color: #fff;
+  text-transform: uppercase;
+  background-color: @pink;
+  text-decoration: none;
+  padding: 12px;
+  margin: 20px auto 5px auto;
+  border-radius: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  display: block;
+}
+
+.button-readmore:hover{
+  background-color: @caramel;
+  color: @dark-grey;
+}
+

@@ -1,12 +1,10 @@
-.page-header{
+.page-header, .page-footer{
   background-image: url(../img/pink.jpg);
   width: 100%;
   min-height: 110px;
   position: relative;
 
     & ul>li{display: inline-block;}
-
-    & .column5 {margin-top: 25px;}
 }
 
 .page-header:after{
@@ -29,6 +27,7 @@ text-transform: uppercase;
 transition: all 1s;
 padding: 15px;
 position: relative;
+line-height: 80px;
 }
 
 .nav-item:hover{
@@ -37,7 +36,8 @@ color: #fff;
 
 .nav-item:hover:before{
   content: '';
-  background-image: url(../img/nav.png);
+  background-image: url(../img/spritesheet.png);
+  background-position: -7px -145px;
   display: inline-block;
   background-repeat: no-repeat;
   width: 69px;
@@ -52,5 +52,25 @@ color: #fff;
 .logo{
 position: absolute;
 z-index: 2;
-top: 10px;
+top: 0px;
+}
+
+.page-footer{
+  min-height: 80px;
+}
+
+.page-footer:before{
+  content: '';
+  display: block;
+  background-image: url(../img/px2.png);
+  background-repeat: repeat-x;
+  position: absolute;
+  bottom: 90px;
+  height: 24px;
+  width: 100%;
+  transform: scale(1, -1);
+}
+
+.page-footer .logo{
+  top: -60px;
 }
