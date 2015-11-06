@@ -1,0 +1,139 @@
+.company-and-order{
+  background-image: url(../img/px3.jpg);
+  padding-bottom: 50px;
+  position: relative;
+
+    & img{
+      border-radius: 10px;
+    }
+
+    & .section-heading{
+      padding-top: 0;
+    }
+}
+
+.company-description{
+  color: @light-grey;
+  font-size: @normal;
+  margin-bottom: 10px;
+}
+
+.company-and-order:after{
+  content: '';
+  display: block;
+  background-image: url(../img/px2.png);
+  background-repeat: repeat-x;
+  height: 24px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;} 
+input:-moz-placeholder      {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;}  
+
+::-webkit-input-placeholder {color:@dark-grey;}
+::-moz-placeholder          {color:@dark-grey;}
+:-moz-placeholder           {color:@dark-grey;}
+:-ms-input-placeholder      {color:@dark-grey;}
+
+
+label{
+  text-transform: uppercase;
+  color: @light-grey;
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+input{
+  height: 45px;
+  width: 45%;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+textarea{
+  width: 45%;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+}
+
+#message [placeholder]{
+  margin-left: 10px;
+}
+
+
+.send-message{
+  margin: 0 auto;
+  margin-top: 57px;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: @pink;
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box;
+  left: 260px;
+  width: 220px;
+  text-align: center;
+  transition: all 1s;
+  z-index: 2;
+  outline: none;
+  border: 1px solid #fff;
+}
+
+.send-message:hover{
+  background-color: @caramel;
+  color: @dark-grey;
+}
+
+.send-message:before{
+  content: '';
+  background-image: url(../img/cake.png);
+  transform: rotate(-30deg);
+  width: 47px;
+  height: 50px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+  z-index: 3;
+  top: -40px;
+  left: 0;
+  transition: all ease 1s;
+}
+
+.send-message:hover:before{
+left: 80%;
+transform: rotate(30deg);
+}
+
+.send-message:after{
+content: '';
+display: inline-block;
+background-color: #fff;
+opacity: 0.7;
+width: 40px;
+height: 8px;
+position: absolute;
+top: 0;
+z-index: 2;
+left: 0;
+border-radius: 5px;
+transition: all ease 1s;
+}
+
+.send-message:hover:after{
+  width: 220px;
+}

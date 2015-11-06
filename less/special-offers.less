@@ -1,11 +1,19 @@
 .special-offers{
 background-image: url(../img/px3.jpg);
+}
 
+.special-offers:after{
+  content: '';
+  display: block;
+  background-image: url(../img/px2.png);
+  background-repeat: repeat-x;
+  height: 24px;
+  width: 100%;
 }
 
 .section-heading{
 margin: 30px auto;
-padding-top: 60px;
+padding-top: 50px;
 font-size: @big;
 text-transform: uppercase;
 color: @dark-grey;
@@ -18,11 +26,10 @@ font-weight: normal;
   background-color: #fff;
   padding: 18px;
   box-sizing: border-box;
-  border-radius: 10px;
   transition: all 1s;
   position: relative;
   border: 1px solid  #ddd;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 
     & a{
       text-decoration: none;
@@ -31,13 +38,13 @@ font-weight: normal;
 }
 
 .special-offer-item:hover{
-background-color: @bordo;
+background-color: rgba(180, 34, 74, 0.3);
   & .offer-heading{
-    color: @pink;
+    // color: @pink;
   }
 
   & .offer-description{
-    color: #fff;
+    color: @dark-grey;
   }
 
   & .button-readmore{
@@ -57,7 +64,6 @@ border: 1px solid #fff;
 border-radius: 10px;
 left: 9px;
 top: 10px;
-opacity: 0.7;
 z-index: -1;
 }
 
@@ -90,6 +96,7 @@ text-align: center;
   text-align: center;
   transition: all 0.5s;
   display: block;
+  border: 1px solid  #fff;
 }
 
 .button-readmore:hover{
