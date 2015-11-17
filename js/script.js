@@ -17,6 +17,8 @@ $(document).ready(function() {
     hover: false,
     loader: false
   });
+
+
 });
 
 

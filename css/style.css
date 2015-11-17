@@ -657,6 +657,12 @@ div[class*="column"] {
   color: #7c7c7c;
   font-size: 14px;
   margin-bottom: 10px;
+  margin-right: 20px;
+}
+.message-result {
+  color: #9a274a;
+  font-family: 'Lobster' cursive;
+  font-size: 20px;
 }
 .company-and-order:after {
   content: '';
@@ -681,48 +687,57 @@ input:-ms-input-placeholder {
   text-overflow: ellipsis;
 }
 ::-webkit-input-placeholder {
-  color: #333333;
+  color: #7c7c7c;
 }
 ::-moz-placeholder {
-  color: #333333;
+  color: #7c7c7c;
 }
 :-moz-placeholder {
-  color: #333333;
+  color: #7c7c7c;
 }
 :-ms-input-placeholder {
-  color: #333333;
+  color: #7c7c7c;
+}
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+  border: none;
+}
+::-ms-clear {
+  display: none;
 }
 label {
   text-transform: uppercase;
   color: #7c7c7c;
   display: inline-block;
-  width: 45%;
-  padding: 10px;
+  width: 100%;
+  padding: 10px 0 10px 5px;
   box-sizing: border-box;
 }
 input {
   height: 45px;
-  width: 45%;
+  width: 100%;
   outline: none;
   border: 1px solid #e0e0e0;
   padding: 10px;
   box-sizing: border-box;
   border-radius: 10px;
   margin-bottom: 20px;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 textarea {
-  width: 45%;
-  display: inline-block;
+  width: 100%;
   border-radius: 10px;
   border: 1px solid #e0e0e0;
   outline: none;
-}
-#message [placeholder] {
-  margin-left: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .send-message {
   margin: 0 auto;
-  margin-top: 57px;
+  margin-top: 10px;
   color: #fff;
   text-transform: uppercase;
   background-color: #ff9cba;
@@ -731,11 +746,9 @@ textarea {
   border-radius: 5px;
   position: relative;
   box-sizing: border-box;
-  left: 260px;
   width: 220px;
   text-align: center;
   transition: all 1s;
-  z-index: 2;
   outline: none;
   border: 1px solid #fff;
 }
